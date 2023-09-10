@@ -1,3 +1,4 @@
+- "!include public_applications.yaml"
 - "!include public_employers.yaml"
 - "!include public_positions.yaml"
 - "!include public_users.yaml"

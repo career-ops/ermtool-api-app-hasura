@@ -1,3 +1,10 @@
 table:
   name: applications
   schema: public
+object_relationships:
+  - name: position
+    using:
+      foreign_key_constraint_on: position_id
+  - name: user
+    using:
+      foreign_key_constraint_on: user_id

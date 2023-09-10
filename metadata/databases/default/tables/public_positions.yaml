@@ -1,3 +1,15 @@
 table:
   name: positions
   schema: public
+object_relationships:
+  - name: employer
+    using:
+      foreign_key_constraint_on: employer_id
+array_relationships:
+  - name: applications
+    using:
+      foreign_key_constraint_on:
+        column: position_id
+        table:
+          name: applications
+          schema: public
